@@ -1,8 +1,8 @@
 # projeto4-modelagem-de-um-pequeno-sistema-com-uml-e-bpmn
 
-# modelo feito 
+modelo criado
 
-classDiagram
+    classDiagram
     class Sala {
         - id: int
         - nome: string
