@@ -1,6 +1,6 @@
 # projeto4-modelagem-de-um-pequeno-sistema-com-uml-e-bpmn
 
-modelo criado
+Modelo UML
 
     classDiagram
     class Sala {
@@ -30,6 +30,8 @@ modelo criado
 
     Sala "1" --> "N" Reserva : possui
     Usuario "1" --> "N" Reserva : faz
+
+Modelo BPMN
 
     graph TD;
     A[Início] --> B[Usuário acessa o sistema]
