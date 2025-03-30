@@ -2,34 +2,24 @@
 
 Modelo UML
 
-    classDiagram
-    class Sala {
-        - id: int
-        - nome: string
-        - capacidade: int
-        + verificarDisponibilidade(): bool
-    }
+    +-------------------+                           +-------------------+                           +-------------------+
+       USUÁRIO                                          RESERVA                                         SALA
+    +-------------------+                           +-------------------+                           +-------------------+
+       - id: int                                       - id: int                                    - id: int
+       - nome: String                                  - data: Date                                - nome: String
+       - email: String                                 - horaInicio: Time                          - capacidade: int
+                                                      - horaFim: Time                            
+                                                      - status: String
+    +-------------------+                           +-------------------+                           +-------------------+
+     + cadastrar()                                    + confirmar()                                 + verificarDisponibilidade()
+     + cancelarReserva()                              + cancelar()                                 + listarReservas()
+    +-------------------+                           +-------------------+                           +-------------------+
+    
+              1                                      N                        1                    N
+    +-------------------+---------------------------+------------------------+--------------------+
+    | Um Usuário pode fazer várias Reservas         | Uma Sala pode ter várias Reservas         |
+    +-------------------+---------------------------+------------------------+--------------------+
 
-    class Usuario {
-        - id: int
-        - nome: string
-        - email: string
-        + cadastrar(): void
-        + cancelarReserva(): void
-    }
-
-    class Reserva {
-        - id: int
-        - data: Date
-        - horaInicio: Time
-        - horaFim: Time
-        - status: string
-        + confirmar(): void
-        + cancelar(): void
-    }
-
-    Sala "1" --> "N" Reserva : possui
-    Usuario "1" --> "N" Reserva : faz
 
 Modelo BPMN
 
