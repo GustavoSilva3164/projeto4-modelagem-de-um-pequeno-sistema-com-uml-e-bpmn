@@ -1,5 +1,10 @@
 # projeto4-modelagem-de-um-pequeno-sistema-com-uml-e-bpmn
 
+# Projeto de matriz UML e PBMN
+
+## INTEGRANTES DA EQUIPE:
+- Gustavo Silva de Souza
+- Caio Breno
 Modelo UML
 
     +-------------------+                           +-------------------+                           +-------------------+
